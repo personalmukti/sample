@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
         Spatie\Permission\PermissionServiceProvider::class,
+        Barryvdh\Snappy\ServiceProvider::class,
+        InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +232,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Flash' => Laracasts\Flash\Flash::class,
+        'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
+	    'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
 
     ],
 
